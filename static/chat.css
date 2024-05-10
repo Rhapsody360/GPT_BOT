@@ -1,0 +1,193 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+}
+
+.message-header {
+    display: flex;
+    align-items: center;
+    background-color: #252525;
+    height: 10%;
+    padding: 10px;
+    color: rgb(210, 210, 210);
+}
+
+.message-header img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+.message-header span {
+    font-size: 35px;
+    letter-spacing: .6px;
+    font-weight: bold;
+    font-family: "Reddit Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+    background: url(images/bg.png);
+    background-size: 100% 100%;
+    filter: brightness(80%);
+}
+
+.message-page {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px;
+}
+
+.message-container {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+
+.message-container img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400..700&family=Reddit+Mono:wght@200..900&display=swap');
+
+.message-container p {
+    max-width: 60%;
+    word-wrap: break-word;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 0 10px;
+
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.message-container time {
+    font-size: 10px;
+    color: #cbcbcb;
+    margin: 4px;
+    font-weight: 600;
+}
+
+.outgoing {
+    justify-content: flex-end;
+}
+
+.outgoing img {
+    order: 2;
+}
+
+.outgoing p {
+    background-color: #4caf50;
+    color: white;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.outgoing time {
+    order: 3;
+}
+
+.incoming {
+    justify-content: flex-start;
+}
+
+.incoming img {
+    order: 1;
+}
+
+.incoming p {
+    background-color: #e0e0e0;
+    color: black;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.incoming time {
+    order: 2;
+}
+
+.message-bottom {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    height: 10%;
+    padding: 10px;
+}
+
+.message-bottom input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: 50px;
+    border: 2px solid green;
+    opacity: .8;
+    transition: .4s;
+    font-size: 16px;
+    font-family: "Edu NSW ACT Foundation", cursive;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    background-color: #b0b0b0;
+}
+
+input:focus{
+    border: 2.5px solid rgb(0, 255, 0);
+    opacity: 1;
+    background-color: #cacaca;
+}
+
+.message-bottom button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    outline: none;
+    background-color: rgb(0, 194, 0);
+    border-radius: 50%;
+    margin-left: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 23px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+button:hover{
+    background-color: rgb(190, 190, 190);
+    color: #333333;
+}
+
+@media (max-width: 768px) {
+    .message-header span {
+        font-size: 20px;
+    }
+}
