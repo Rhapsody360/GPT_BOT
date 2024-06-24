@@ -2,7 +2,7 @@ from transformers import AutoTokenizer, pipeline
 import torch
 
 model = "google/gemma-2b-it"
-hf_access_token = "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"
+hf_access_token = ""
 
 tokenizer = AutoTokenizer.from_pretrained(model,token = hf_access_token)
 pipeline = pipeline(
